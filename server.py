@@ -44,4 +44,7 @@ def submit():
         db_csv(data)
         return redirect("/thankyou.html")
     else:
-        return redirect("/sww.html")
+        return redirect("/error.html")
+
+if __name__ == "__main__":
+    app.run(debug=True)
